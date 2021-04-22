@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <title>JS</title>
+</head>
+<body>
+    <script>
+     //Local Storage
+     /*
+    localStorage.setItem("hello", "world");
+    localStorage.setItem("tabish", "iqbal")
+
+    localStorage.setItem("heelo", "worl")
+
+    let abc = localStorage.getItem("hello");
+    console.log(abc);    //world
+
+    localStorage.removeItem("heelo");
+    localStorage.getItem("heelo");
+    
+    console.log(localStorage.key(1)); //tabish
+    console.log(localStorage.key(2));  //null
+    console.log(localStorage.length);  //2
+
+    // localStorage.clear();
+    console.log(localStorage.length);  //0
+    */
+    /*
+    const user = {name: "tabish"};
+    localStorage.setItem("user", user); //user [object, object]
+    localStorage.getItem("user"); // [object, object]
+        //it will not store like that (as its object not string)
+    localStorage.setItem("user-copy", JSON.stringify(user)); //user-copy, {"name": "tabish"}
+    localStorage.getItem("user-copy"); //{"name":"tabish"}
+    JSON.parse(localStorage.getItem("user-copy")); //{name:"tabish"}
+    
+    function setLocalStorageData{}
+    */
+   
+    //Session Storage 
+    
+        sessionStorage.setItem("hello", "world");
+        sessionStorage.setItem("tabish", "iqbal")
+
+        sessionStorage.setItem("heelo", "worl")
+
+        sessionStorage.getItem("hello");
+        
+        sessionStorage.removeItem("heelo");
+        sessionStorage.getItem("heelo");
+    
+        console.log(sessionStorage.key(1)); //tabish
+        console.log(sessionStorage.key(2));  //null
+        console.log(sessionStorage.length);  //2
+
+        // sessionStorage.clear();
+    
+
+
+    </script>
+    <h1>Hello World</h1>
+
+</body>

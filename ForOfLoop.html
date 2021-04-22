@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>JS</title>
+</head>
+<body>
+    <script>
+
+    // For of Loop
+    // The For..Of loop is used to loop over any type of data that is
+    // iterable like string, array, map, set etc   
+     
+    const myArr = ["a", "b", "c", "d"];
+    const name = "tabi";
+
+    for (const index of myArr){
+        console.log(index);  // a b c d
+    }
+
+    for (const index of name){
+        console.log(index); // t a b i
+    }
+
+    myArr.forEach(Arr =>{
+        console.log(Arr); //a b c d     
+    })
+    //or (above example)
+    myArr.forEach(function(Arr1) {
+        console.log(Arr1)   // a b c d
+    })
+
+    </script>
+    <h1>Hello World</h1>
+
+</body>

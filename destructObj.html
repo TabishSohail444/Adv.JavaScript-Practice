@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>JS</title>
+</head>
+<body>
+    <script>
+        //Destructring Object 
+
+        /* 
+        let myObject = {fname: "tabish", lname: "sohail", degree: 2};
+        let {fname, lname, degree} = myObject;
+        console.log(fname);   //tabish
+        console.log(lname);   //sohail
+        console.log(degree);   //2
+
+        let sentence = `${fname} ${lname} has ${degree} degrees`;
+
+        console.log(sentence); //tabish sohail has 2 degrees 
+        */
+
+        // Destructure with new names 
+        let obj1 ={width: 10, height: 11, length: 12};
+
+        let {width: w, height: h, length: l} = obj1;
+        console.log(w);  // width wth new w : 10
+        console.log(h); // 11
+        console.log(l); //12
+        console.log(width); // now it will show error
+
+
+    </script>
+    <h1>Hello World</h1>
+
+</body>

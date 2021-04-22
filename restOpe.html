@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <title>JS</title>
+</head>
+<body>
+    <script>
+        //Rest operator (...) //must be in lasts
+        
+        /*let ob ={x:5, y:6, c:7, d:8};
+        let {x, y, ...z} = ob;
+        //let {x, y, ...z} = {x:1, y:2, a:3, b:4};
+        
+        console.log(x);   //1
+        console.log(y);   //2
+        console.log(z);   //{a:3, b:4} */
+
+        /*
+        //let ob ={x:5, y:6, c:7, d:8};
+        //let {x, y, ...z} = ob;
+        let {y, x, ...z} = {x:1, y:2, a:3, b:4};
+        
+        console.log(x);   //1
+        console.log(y);   //2
+        console.log(z);   //{a:3, b:4} 
+        */
+    
+        /*
+        let {x, newY, ...z} = {x:1, y:2, a:3, b:4};
+        
+        console.log(x);   //1
+        console.log(newY);   // undefined
+        console.log(z);   //{y:2, a:3, b:4}
+        */
+
+        function sum(name, ...args){
+            console.log(`Hello ${name} :`);   //hello tabish:
+            
+            let sum = 0;
+            for (i in args){
+                sum+= args[i];
+            }
+            console.log(sum);    //20
+            //console.log(name);   //tabish
+        }
+
+        sum("tabish", 2,3,4,5,6)
+        sum("Mehwish", 4,5,2,1)
+
+    </script>
+    <h1>Hello World</h1>
+
+</body>

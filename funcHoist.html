@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>JS</title>
+</head>
+<body>
+    <script>
+     
+    sayHi();
+    exp();  // error: exp is not a func : as we r appling func performance in undefined
+    console.log(a);  //6 , but with var in func : error
+
+    function sayHi(){
+        console.log('hello from function');
+        a = 6;
+        //console.log(a); //6 with or without var 
+        }  
+
+    var exp = function(){
+        console.log("hello from expression");
+    }    
+
+    </script>
+    <h1>Hello World</h1>
+
+</body>

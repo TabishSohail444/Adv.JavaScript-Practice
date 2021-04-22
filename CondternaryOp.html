@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>JS</title>
+</head>
+<body>
+    <script>
+
+    // Conditional Ternary Operator
+
+    function abc({ice = 1, cube = "strawberry"}){
+        let text = ice === 1 ? `wooww` : `yummy`;
+        let frt = cube;
+        console.log(`great ${text} ${frt}`);
+    }
+    abc({});
+    abc({ice: 2});
+
+//Slide: 64 "Conditional (Ternary Operator)"
+//Example # 10:
+
+var marks = 90
+
+marks > 90 ? "Grade A" : "Grade B"
+
+//Example # 11:
+
+var marks = 90
+
+marks > 90 ? "Grade A" : marks > 80 ? "Grade B" : "Grade C"
+
+//Example # 12:
+
+var marks = 60
+
+marks > 90 ? "Grade A" : marks > 80 ? "Grade B" : marks > 70 ? "Grade C" :  marks > 60 ? "Grade D" : "Grade E"
+
+    </script>
+    <h1>Hello World</h1>
+
+</body>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <title>JS</title>
+</head>
+<body>
+    <script>
+        // 1 before E6
+        /* function myFunc(text){
+            let name = "Welcome " + text
+            return name
+        }
+
+        let msg = myFunc("Tabi")
+        console.log(msg);
+        */
+
+        //2 before E6
+        /*
+        const myFunc = function (text) {
+            let name = "Welcome " + text
+            return name
+        }
+    
+        let msg = myFunc ("Tabi");
+        console.log(msg);
+        */
+
+        //3 Arrow Function
+        let hello = () => console.log("Hello");
+
+        hello();
+
+        //4 
+        let myFunc = (text) => {
+            return `Welcome  ${text}`
+        }
+        console.log(myFunc("tabi"));
+
+        //5 Same as above eg in singal line function
+        let Fun = text => `Welcome  ${text}`
+            
+        console.log(Fun("tabish"));
+
+        //6 Same as above eg in singal line function with 2 parameters
+
+        let Func = (text, age) => `Welcome  ${text} ${age}`
+    
+        console.log(Func("anum", 5));
+
+        //7 
+        const Func3 = text => {
+            let name = "Welcome " + text
+            return name
+        }
+    
+        let msg = Func3 ("Tabish Iqbal");
+        console.log(msg);
+
+        //8
+        const Func4 = text => "Welcome " + text
+    
+        let msg1 = Func4 ("Tabish Sohail");
+        console.log(msg1);
+
+    </script>
+    <h1>Hello World</h1>
+
+</body>

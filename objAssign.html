@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>JS</title>
+</head>
+<body>
+    <script>
+
+    //Object.keys, object.values, object.assign   
+     
+    let myObj = {
+        firstName: "tabish",
+        lastName: "sohail",
+        age: 6};
+
+    let myObj2 = {
+        city: "Karachi",
+        country: "Pakistan",
+        gender: "Female"};
+
+    let arr1 = Object.keys(myObj);
+    console.log(arr1);
+
+    let arr2 = Object.values(myObj);
+    console.log(arr2);
+
+    let newArr = Object.assign({},myObj, myObj2);
+    console.log(newArr);
+    
+    </script>
+    <h1>Hello World</h1>
+
+</body>

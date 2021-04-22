@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <title>JS</title>
+</head>
+<body>
+    <script>
+
+    /* using var in a loop
+    var a = 5;
+    for(b=0; b<1; b++){
+        var c = b +2;
+        a = 56;   //global
+        console.log("B:", b);   //0
+        console.log("C:", c);   //2
+    } //b=1
+        console.log("A:", a);   //56
+        console.log("B:", b);   //1
+        console.log("C:", c);   //2 
+        */
+
+    /* using let in a loop
+    var a = 5;
+    for(b=0; b<1; b++){
+        let c = b +2;    //let is block scope
+        a = 56;   //global
+            console.log("B:", b);   //0
+            console.log("C:", c);   //2
+        } //b=1
+        console.log("A:", a);   //56
+        console.log("B:", b);   //1
+        console.log("C:", c);   //error
+        */
+
+        // function hoisting
+        var a = 100;
+        function hoist(){
+            a = 20;
+            var b = 100;
+
+        }
+        hoist();
+        console.log("a: ", a); // 20      
+        console.log("b: ", b); // error
+
+    </script>
+
+    
+    <h1>Hello World</h1>
+
+</body>

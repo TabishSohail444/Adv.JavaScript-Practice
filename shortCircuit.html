@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title>JS</title>
+</head>
+<body>
+    <script>
+    // Short Circuit Evaluation && ||
+    // && if all true, it will store last true. if get false, it willnot go further and save false  
+    // || it will check all conditions(values), if get 
+    
+    let gender = "male";
+    
+    let a = (gender==="male") && "tabish"; //true && true
+    console.log(a);     // tabish
+
+    let b = (gender==="female") && "tabish"; //false && true
+    console.log(b);     //false
+
+    let c = "tabish" && (gender==="male");
+    console.log(c);     //true
+
+    let d = "tabish" && gender==="female";
+    console.log(d);     //false
+
+        // ||
+    let e = (gender==="female") || "tabish"; //false && true
+    console.log(e);     // tabish
+    
+    let f = (gender==="male") || "tabish"; //true || true
+    console.log(f);     // true 
+
+    /*
+//Slide: 67 "Short-Circuit Evaluation && ||"
+//Example # 13:
+
+let gender = "male"
+
+let msg = (gender === "male") && "&& Short-curcuit"
+console.log(msg)
+
+msg = (gender==="female") || "|| Short-curcuit" 
+console.log(msg)
+*/    
+    </script>
+    <h1>Hello World</h1>
+
+</body>

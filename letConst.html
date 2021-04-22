@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>JS</title>
+</head>
+<body>
+    <script>
+        //var x = 10;
+        //{let x = 2;}
+        //console.log(x);  //10
+        
+        /*console.log(name1);   //undefined
+        var name1;  
+        name1 = "tabish"; */
+
+        /*let name2;
+        console.log(name2); //error
+        let name2;
+        name2 = "tabish"; */
+
+        /*myname ="tabish"; //error
+        console.log(myname); //cannt access 'myname' before initialization
+        let myname; */
+
+        myname1 ="tabish"; //error
+        let myname1;
+        console.log(myname1); //cannt access 'myname' before initialization
+        
+
+
+        const dog = 'snickers';
+        function logDog(){
+            console.log(dog);  //snickers
+        }
+        function go(){
+        const dog = 'sunny';
+        logDog();   // -- (as const)
+        console.log(dog);   //sunny
+        }
+        go();
+        console.log(dog);  //snickers 
+
+    </script>
+    <h1>Hello World</h1>
+
+</body>

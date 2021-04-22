@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <title>JS</title>
+</head>
+<body>
+    <script>
+            //Clouser 
+    /*
+    function Clouser(){
+        var count = 0
+        console.log(count);
+        return function(){
+            count++
+            return count
+        }
+    }
+    var getClouser = Clouser();
+
+    getClouser();
+    */
+
+    /*
+    function clouserFunc(inp){
+        var count = inp;
+        return function (inp2){
+            var total = count + inp2;
+            return total;
+        }
+    }
+
+    var getClo = clouserFunc(75);
+    getClo(15);
+    */
+
+    function clouserFunct(perc){
+        var percentage = perc;
+        return function (inp3){
+            var tot = inp3 - (inp3 * percentage);
+            return tot;
+        }
+    }
+
+    var headphone = clouserFunct(35);
+    headphone(100); //65
+
+    var mic = clouserFunct(65);
+    mic(500);   //175
+
+    </script>
+    <h1>Clouser Practice</h1>
+
+</body>

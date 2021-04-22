@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>JS</title>
+</head>
+<body>
+    <script>
+        //The Set oject let you store unique values of any type
+        let newOjet = new Set(["name1", "name2", "name3", "name1"]);
+
+        console.log(newOjet); // {"name1", "name2", "name3"}
+
+        newOjet.add("name4");
+        newOjet.add("name2");
+        newOjet.add("name5");
+
+        console.log(newOjet); //{"name1", "name2", "name3", "name4", "name5"}
+
+        newOjet.delete("name5");
+        console.log(newOjet); //{"name1", "name2", "name3", "name4"}
+
+        for(i of newOjet){
+            console.log(i);  //name1  name2  name3 name 4
+        }
+
+    </script>
+    <h1>Hello World</h1>
+
+</body>

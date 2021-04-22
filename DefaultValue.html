@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <title>JS</title>
+</head>    
+<body>
+    <script>
+
+//Slide: 49 Default Values
+// Example # 1:
+
+function welcomeMsg(name) {
+    let msg = "Welcome " + name;
+    console.log(msg);
+}
+
+welcomeMsg("Tabish Iqbal");
+welcomeMsg();
+
+//Example # 2:
+
+function welcomeMsg(name="Everyone") {
+    let msg = "Welcome " + name;
+    console.log(msg);
+}
+
+welcomeMsg("Tabish Sohail");
+welcomeMsg();
+
+//Example # 3:
+
+function createIcecream({scoops = 1, toppings = ['Dark Chocolate']}) {
+    const scoopText = scoops === 1 ? 'scoop' : 'scoops'; 
+    console.log(`Your sundae has ${scoops} ${scoopText} with ${toppings.join(' and ')} toppings.`)  //Template Literals
+}
+
+createIcecream({});
+createIcecream({scoops:2});
+createIcecream({scoops:2,toppings: ['Sprinkles','Smarties']});
+createIcecream({toppings:['Strawberry']});
+createIcecream();
+
+//Example # 4:
+
+function createIcecream({scoops = 1, toppings = ['Dark Chocolate']} = {}) {
+    const scoopText = scoops === 1 ? 'scoop' : 'scoops'; 
+    console.log(`Your sundae has ${scoops} ${scoopText} with ${toppings.join(' and ')} toppings.`) //Template Literals
+}
+
+createIcecream({});
+createIcecream({scoops:2});
+createIcecream({scoops:2,toppings: ['Sprinkles','Smarties']});
+createIcecream({toppings:['Strawberry']});
+createIcecream();
+
+ </script>
+</body>

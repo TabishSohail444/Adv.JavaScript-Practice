@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>JS</title>
+</head>
+<body>
+    <script>
+    // this keyword
+
+    var name = "tabish";
+
+    let obj = {
+        name: "sohail",
+
+        WelcomeMsg: function(){
+            return "Welcome " + this.name
+        },
+
+        WelcomeNewMsg: () => {
+            return "Welcome " + this.name
+        }
+    }
+
+    let disp = obj.WelcomeMsg()
+    console.log(disp);          //welcome sohail (inner name used)
+    
+    let disp2 = obj.WelcomeNewMsg()   //Arrow Function used
+    console.log(disp2);     //Welcome Tabish (global name used)
+
+    </script>
+    <h1>Hello World</h1>
+
+</body>
